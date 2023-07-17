@@ -1,0 +1,294 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITazza",
+  "sourceName": "contracts/ITazza.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "public_key",
+              "type": "uint256[2]"
+            }
+          ],
+          "internalType": "struct ITazza.Player[]",
+          "name": "players",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "num_cards",
+          "type": "uint256"
+        }
+      ],
+      "name": "create_deck",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "public_key",
+              "type": "uint256[2]"
+            }
+          ],
+          "internalType": "struct ITazza.Player[]",
+          "name": "",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "c1_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c1_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "flag",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ITazza.Card",
+          "name": "card",
+          "type": "tuple"
+        }
+      ],
+      "name": "decode_card",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "c",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "deck_ind",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "card_ind",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "player_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "decrypt_card",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256[2]",
+              "name": "public_key",
+              "type": "uint256[2]"
+            }
+          ],
+          "internalType": "struct ITazza.Player[]",
+          "name": "players",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "c",
+          "type": "uint256"
+        }
+      ],
+      "name": "encode_card",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "c1_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c1_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "flag",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ITazza.Card",
+          "name": "card",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "deck_ind",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "card_ind",
+          "type": "uint256"
+        }
+      ],
+      "name": "open_card",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "deck_ind",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "c1_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c1_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_x",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "c2_y",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "flag",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ITazza.Card[]",
+          "name": "cards",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "shuffle_deck",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[24]",
+          "name": "_proof",
+          "type": "uint256[24]"
+        },
+        {
+          "internalType": "uint256[2]",
+          "name": "_pubSignals",
+          "type": "uint256[2]"
+        }
+      ],
+      "name": "verify_public_key",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
