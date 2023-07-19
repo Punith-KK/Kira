@@ -5,6 +5,8 @@
 
 ## "Kira: Unleash the Power of On-Chain Card Games" encapsulates the essence of the project in a concise tagline. It highlights Kira's unique ability to harness the potential of on-chain card games, where gameplay and interactions occur directly on the blockchain without the need for centralized servers. By leveraging the power of zero-knowledge proofs and the Gnosis chain, Kira empowers developers and players to experience the benefits of decentralized gaming. It signifies that Kira opens up a new realm of possibilities, allowing users to fully immerse themselves in secure, transparent, and dynamic card game experiences directly on the blockchain.
 
+![kira_gif](https://github.com/Punith-KK/Kira/assets/118302022/9c11a78b-e71c-4a94-a495-64aae9425209)
+
 ## Video
 https://github.com/Punith-KK/Kira/assets/118302022/d693bd83-b73e-4104-bac7-6774dc0c5c98
 
